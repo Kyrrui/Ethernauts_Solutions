@@ -1,0 +1,10 @@
+TOKEN SOLUTION
+
+Using remix, deploy the provided contract using the token contract address.
+
+call the transfer function with the player address and any amount of tokens.
+
+=========================
+This works because UINT is an Unsigned Integer, meaning it can never be a negative number, so the require statement is meaningless. As long as you use a seperate contract to call
+transfer with a value, even if that contract has no tokens,
+your address will recieve those tokens.

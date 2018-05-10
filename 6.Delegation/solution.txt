@@ -1,0 +1,19 @@
+DELEGATION SOLUTION
+
+Here we want to access the function pwn() in the Delegate
+contract. To do this we need to send the FUNCTION SIGNATURE of 
+the method we wish to call. To determine this signature, you must
+run Keccak256 on the function. 
+Here it would be Keccak256(pwn())
+But a more sophisticaed method would look like this
+Keccak256(pwn(uint, bool));
+Once you have this Keccak hash, take the first 4 bytes (8 bits)
+and add a 0x to the begining. This is the function signature.
+Here we will call the contract with this function signature and take control of the contract.
+(The function signature of pwn() is 0xdd365b8b)
+
+In web console run:
+sendTransaction({data:"0xdd365b8b", to:"CONTRACT_ADDRESS"})
+
+HERE IS A TOOL TO FIND THE KECCAK OF A STRING: 
+https://emn178.github.io/online-tools/keccak_256.html

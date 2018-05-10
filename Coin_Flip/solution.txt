@@ -1,0 +1,5 @@
+COIN FLIP SOLUTION
+
+Using remix, deploy the provided contract using the coin flip contract address.
+
+Call the attackCoinFlip function 10 times, waiting until each transaction has finished. You may want to increase gas limit in metamask. If you accidentally call this function multiple times in one block, you may need to call it more than 10 times.

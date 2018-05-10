@@ -1,0 +1,5 @@
+TELEPHONE SOLUTION
+
+Using remix, deploy the provided contract using the telephone contract address.
+
+Call the takeOwnershipOfTelephone function.
